@@ -62,20 +62,6 @@ main > h1 {
     color: rgb(85, 82, 82);
 }
 
-div#musica {
-    width: 330px;
-    height: 95px;
-}
-
-audio {
-    display: block;
-    margin: 10px auto 0px auto;
-}
-
-div#musica > h1 {
-    font-size: 1.6em;
-}
-
 div {
     display: flex;
     justify-content: space-between;
@@ -90,18 +76,21 @@ div {
 }
 
 div:hover {
+    border: 2px solid rgb(235, 133, 150);
     transition-duration: 0.9s;
     transform: translate(-2px, -2px);
 }
 
 div > p {
+    text-align: right;
     font-size: 0.8em;
     color: black;
 }
 
 div > p:hover {
+    text-shadow: 1px 1px 1px black;
     color: white;
-    transition-duration: 0.9s;
+    transition-duration: 0.3s;
 }
 
 div > img {
@@ -114,7 +103,7 @@ div > img, p {
 }
 
 img:hover {
-    filter: drop-shadow(5px 5px 20px var(--cor2));
+    filter: drop-shadow(5px 5px 20px rgb(244, 199, 121));
     transition-duration: 0.3s;
 }
 
