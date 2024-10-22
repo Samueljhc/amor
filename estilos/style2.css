@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+html, body {
+    color: white;
+    font-family: var(--fonte1);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: pink;
+    --cor2: moccasin;
+
+    --fonte1: "Sometype Mono", monospace;
+    --font02: "Nerko One", cursive;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7em;
+    background-color: var(--cor1);
+}
+
+header > h1 {
+    font-size: 3em;
+    font-family: var(--font02);
+    color: var(--font02);
+    text-shadow: 1px 1px 1px black;
+}
+
+main {
+    background-color: moccasin;
+
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+}
+
+main > h1 {
+    font-size: 0.9em;
+    padding: 10px;
+    color: rgb(85, 82, 82);
+}
+
+div#musica {
+    width: 330px;
+    height: 95px;
+}
+
+audio {
+    display: block;
+    margin: 10px auto 0px auto;
+}
+
+div#musica > h1 {
+    font-size: 1.6em;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--cor1);
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 330px;
+    height: 95px;
+    border: 1px solid black;
+}
+
+div:hover {
+    transition-duration: 0.9s;
+    transform: translate(-2px, -2px);
+}
+
+div > p {
+    font-size: 0.8em;
+    color: black;
+}
+
+div > p:hover {
+    color: white;
+    transition-duration: 0.9s;
+}
+
+div > img {
+    width: 75px;
+    height: 75px;
+}
+
+div > img, p {
+    align-content: center;
+}
+
+img:hover {
+    filter: drop-shadow(5px 5px 20px var(--cor2));
+    transition-duration: 0.3s;
+}
+
+div#video {
+    display: block;
+    margin: auto;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#video > p {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+
+li {
+    list-style-position: inside;
+    list-style-type: none;
+    color: lightgray;
+}
+
+li:hover {
+    color: white;
+    transition-duration: 0.9s;
+}
