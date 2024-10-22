@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    font-size: 1em;
+    text-align: center;
+    background-color: pink;
+    padding: 20px;
+}
+
+a {
+    font-weight: bold;
+    margin: 50px auto 0px auto;
+    width: 50vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: pink;
+    transition-duration: 0.7s;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    transform: translate(2px, 2px);
+}
